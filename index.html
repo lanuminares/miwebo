@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="author" content="Autor: Tu Nombre">
-<title>Mi Página de Ejemplo en AsciiDoc</title>
+<title>Guía Básica de Parrot OS</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Mi Página de Ejemplo en AsciiDoc</h1>
+<h1>Guía Básica de Parrot OS</h1>
 <div class="details">
 <span id="author" class="author">Autor: Tu Nombre</span><br>
 </div>
@@ -447,11 +447,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_introducción">Introducción</a></li>
-<li><a href="#_estilos_de_texto">Estilos de Texto</a></li>
-<li><a href="#_lista_numerada">Lista Numerada</a></li>
-<li><a href="#_tabla_de_ejemplo">Tabla de Ejemplo</a></li>
-<li><a href="#_imagen_de_ejemplo">Imagen de Ejemplo</a></li>
-<li><a href="#_conclusión">Conclusión</a></li>
+<li><a href="#_pasos_para_ejecutar_un_script">Pasos para Ejecutar un Script</a></li>
+<li><a href="#_tabla_de_información_de_contacto">Tabla de Información de Contacto</a></li>
+<li><a href="#_formato_de_texto">Formato de Texto</a></li>
+<li><a href="#_imagen_de_parrot_os">Imagen de Parrot OS</a></li>
 </ul>
 </div>
 </div>
@@ -460,97 +459,93 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introducción">Introducción</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Este es un ejemplo de cómo crear una página en AsciiDoc desde la terminal. Aquí verás diferentes estilos de texto, una lista numerada, una tabla y una imagen.</p>
+<p>Esta guía muestra cómo realizar una instalación básica y ejecutar un script en Parrot OS. También te ayuda a configurar una página AsciiDoc sencilla. Parrot OS es popular entre entusiastas de la seguridad y la privacidad.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_estilos_de_texto">Estilos de Texto</h2>
+<h2 id="_pasos_para_ejecutar_un_script">Pasos para Ejecutar un Script</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Texto en negrita</strong>: <strong>Este es un texto en negrita</strong>
-<em>Texto en cursiva</em>: <em>Este es un texto en cursiva</em>
-<code>Código en línea</code>: Este es un ejemplo de <code>código en línea</code>.</p>
+<p>Para ejecutar un script en Parrot OS, sigue estos pasos:</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_lista_numerada">Lista Numerada</h2>
-<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Primer elemento de la lista</p>
+<p><strong>Verifica los permisos</strong>: Asegúrate de que el script tiene permisos de ejecución. Usa el comando <code>chmod +x nombre_del_script.sh</code>.</p>
 </li>
 <li>
-<p>Segundo elemento de la lista</p>
+<p><strong>Ejecuta el script</strong>: Si es un script de Bash, usa <code>./nombre_del_script.sh</code>.</p>
 </li>
 <li>
-<p>Tercer elemento de la lista</p>
+<p><strong>Especifica el intérprete</strong>: Puedes ejecutar directamente con <code>bash nombre_del_script.sh</code> si no tienes permisos de ejecución.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_tabla_de_ejemplo">Tabla de Ejemplo</h2>
+<h2 id="_tabla_de_información_de_contacto">Tabla de Información de Contacto</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Aquí tienes un ejemplo de cómo estructurar una tabla en AsciiDoc para información de contacto:</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 30%;">
-<col style="width: 20%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Columna 1</th>
-<th class="tableblock halign-left valign-top">Columna 2</th>
-<th class="tableblock halign-left valign-top">Columna 3</th>
+<th class="tableblock halign-left valign-top">Nombre</th>
+<th class="tableblock halign-left valign-top">Información</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soporte Técnico</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:soporte@parrotos.org">soporte@parrotos.org</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comunidad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:comunidad@parrotos.org">comunidad@parrotos.org</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dato 9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Documentación</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.parrotos.org" class="bare">https://docs.parrotos.org</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_imagen_de_ejemplo">Imagen de Ejemplo</h2>
+<h2 id="_formato_de_texto">Formato de Texto</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="./imagenes/example.jpg" alt="example">
+<div class="paragraph">
+<p>Puedes aplicar diferentes estilos de texto en AsciiDoc usando nano (que viene instaldo en Parrot) y AsciiDoc, que se instala con un sencillo comando:</p>
 </div>
-<div class="title">Figure 1. Imagen de muestra</div>
+<div class="paragraph">
+<p><strong>Negrita</strong>: <strong>Texto en negrita</strong>
+<strong>Cursiva</strong>: <em>Texto en cursiva</em>
+<code>Código en línea</code>: Ejemplo de <code>comando</code>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_conclusión">Conclusión</h2>
+<h2 id="_imagen_de_parrot_os">Imagen de Parrot OS</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>En esta página de ejemplo hemos usado varios elementos de formato en AsciiDoc. Esto permite estructurar y dar estilo al contenido de manera sencilla y organizada.</p>
+<div class="imageblock">
+<div class="content">
+<img src="https://www.parrotsec.org/img/parrot-logo.png" alt="Parrot OS Logo" width="300">
+</div>
+<div class="title">Figure 1. Logotipo de Parrot OS</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-10-28 16:16:38 +0100
+Last updated 2024-10-30 15:39:47 +0100
 </div>
 </div>
 </body>
